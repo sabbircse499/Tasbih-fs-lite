@@ -1,0 +1,92 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:padding="20dp"
+    android:background="@drawable/bg32"
+    >
+
+    <TextView
+        android:id="@+id/tasbi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tasbih"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="15dp"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/view"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:background="#000000"
+        android:gravity="center"
+        android:text=""
+        android:textSize="20dp"
+        android:textColor="#FFFFFF"
+        android:layout_below="@+id/tasbi"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:id="@+id/lin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_below="@+id/view"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:id="@+id/sub01"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Sub"
+            android:layout_margin="5dp" />
+
+        <Button
+            android:id="@+id/count01"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="count"
+            android:layout_margin="5dp" />
+    </LinearLayout>
+
+
+    <Button
+android:id="@+id/reset01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/lin"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:text="Reset"
+        android:layout_marginBottom="-69dp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:id="@+id/marqueeText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="296dp"
+        android:background="#FFFFFF"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:padding="10dp"
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+        android:text="You are most welcome in our application.."
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+
+</RelativeLayout>
